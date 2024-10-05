@@ -1,1 +1,5 @@
 /.env
+/.__pycache__/
+/.vscode/
+/.Cogs/__pycache__/
+/.utils/__pycache__/
