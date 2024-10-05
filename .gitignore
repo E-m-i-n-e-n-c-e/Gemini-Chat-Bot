@@ -1,6 +1,6 @@
 /.env
-/.__pycache__/
+/__pycache__/
 /.vscode/
-/.Cogs/__pycache__/
-/.utils/__pycache__/
+/Cogs/__pycache__/
+/utils/__pycache__/
 /.venv
