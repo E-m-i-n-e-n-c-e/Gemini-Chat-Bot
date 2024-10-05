@@ -40,6 +40,8 @@ def setup(bot, default_categories):
         myEmbed.add_field(name="!edit createvoicechannel <name>", value="Creates a voice channel in the default voice category", inline=False)
         myEmbed.add_field(name="!edit createrole <name>", value="Creates a role with the specified name", inline=False)
         myEmbed.add_field(name="!kick <member> [reason]", value="Kicks the specified member from the server", inline=False)
+        myEmbed.add_field(name="!ban <member> [reason]", value="Bans the specified member from the server", inline=False)
+        myEmbed.add_field(name="!unban <user_name>", value="Unbans the specified user from the server", inline=False)
         myEmbed.add_field(name="!query <question>", value="Queries the Gemini API with your question and returns a response", inline=False)
         myEmbed.add_field(name="!pm", value="Sends a private message to you asking how the bot can help", inline=False)
         await ctx.send(embed=myEmbed)
@@ -110,7 +112,7 @@ def setup(bot, default_categories):
             
             user = ban_entry.user
             await ctx.send(user.mention)
-            if user.mention == user_name:
+            if user.mention == user_name or user.name == user_name:
                 await ctx.guild.unban(user)
                 await ctx.send(f'Unbanned {user.mention}')
                 return
