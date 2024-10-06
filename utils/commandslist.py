@@ -44,6 +44,8 @@ def setup(bot, default_categories):
         myEmbed.add_field(name="!unban <user_name>", value="Unbans the specified user from the server", inline=False)
         myEmbed.add_field(name="!query <question>", value="Queries the Gemini API with your question and returns a response", inline=False)
         myEmbed.add_field(name="!pm", value="Sends a private message to you asking how the bot can help", inline=False)
+        myEmbed.add_field(name="!gemini enable", value="Enables Gemini to respond to every message in the server", inline=False)
+        myEmbed.add_field(name="!gemini disable", value="Disables Gemini from responding to every message in the server", inline=False)
         await ctx.send(embed=myEmbed)
 
     @bot.group()

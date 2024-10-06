@@ -15,9 +15,11 @@ This project is a Discord bot that integrates with the Google Gemini API . The b
 - **!edit createrole {name}**: Creates a role with the specified name.
 - **!kick {member} [reason]**: Kicks the specified member from the server.
 - **!ban {member} [reason]**: Bans the specified member from the server
--  **unban {user_name}**:  Unbans the specified user from the server
+- **unban {user_name}**:  Unbans the specified user from the server
 - **!query {question}**: Queries the Gemini API with your question and returns a response.
 - **!pm**: Sends a private message to you asking how the bot can help and you can talk to it .
+- **!gemini enable**: Enables Gemini to respond to every message in the server.
+- **!gemini disable**: Disables Gemini from responding to every message in the server.
 
 ## Setup
 
